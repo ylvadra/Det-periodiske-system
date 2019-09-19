@@ -1,0 +1,77 @@
+body{
+  background-color: lightgrey;
+}
+nav{
+  background-color: orange;
+  display: flex; /* gjør navbaren til en flex boks*/
+  text-align: center;
+  position: fixed;
+  margin: auto;
+}
+nav a{ /*velger alle a-elementer som ligger i nav*/
+  color: white; /*skriftfarger*/
+  text-decoration: none; /*fjerner understrek*/
+  padding: 25px; /*lager luft mellom lenkene*/
+}
+nav .active{ /*velger klassen active inne i nav*/
+  background-color: #d18b13; /*setter farge på elementet som er active*/
+}
+nav a:hover:not(.active){ /*velger a-elementer som musen er over i nav, men ikke elementer som har klassen active*/
+  background-color: #f2c77c; /* setter bakgrunnsfarge*/
+}
+.systemet{
+  display: grid;
+  grid-template-columns: repeat(18,1fr);
+  grid-gap: 5px;
+  padding-top: 100px;
+}
+.systemet2{
+  display: grid;
+  grid-template-columns: repeat(14,1fr);
+  grid-gap: 5px;
+  padding-top: 50px;
+}
+.span-6{
+  grid-column: span 16;
+}
+.span-10{
+  grid-column: span 10;
+}
+.usynlig{
+  opacity: 0;
+}
+.grunnstoff{
+  border-style: solid;
+  border-radius: 8px;
+  border-color: orange;
+}
+.grunnstoff:hover{
+  background-color: #f7c672;
+  transform: scale(1.02);
+  box-shadow: 10px 5px;
+}
+.tall,.navn{
+  text-align: center;
+}
+
+.tall{
+  font-size: 21px;
+}
+.lilla{
+  background-color: #e395f5;
+}
+.lilla:hover{
+  background-color: #ecb1fa;
+}
+.oransje{
+  background-color: #ffcb70;
+}
+.oransje:hover{
+  background-color: #ffd58c;
+}
+.peach{
+  background-color: #ffb48c;
+}
+.peach:hover{
+  background-color: #fcc1a2
+}
